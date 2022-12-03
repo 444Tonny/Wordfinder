@@ -7,8 +7,7 @@ let currentGuess = [];
 let nextLetter = 0;
 let rightGuessString = WORDS[Math.floor(Math.random() * WORDS.length)]
 
-console.log(rightGuessString)
-
+// console.log(rightGuessString)
 function rgbExtract(s) {
     var match = /^\s*rgb\(\s*(\d+),\s*(\d+),\s*(\d+)\)\s*$/.exec(s);
     if (match === null) {
