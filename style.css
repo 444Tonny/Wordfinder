@@ -1,0 +1,95 @@
+header
+{
+  padding: 8px 5% 20px 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+
+body
+{
+  background-color: rgb(17, 14, 21);
+  color: whitesmoke;
+}
+
+h1 {
+ text-align: center;
+}
+
+#game-board {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.letter-box {
+  border: 1.4px solid rgba(176, 176, 176, 0.822);
+  border-radius: 3px;
+  margin: 3px 3px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: Helvetica, monospace, sans-serif;
+  font-weight: 0;
+}
+
+.filled-box {
+  border: 1.4px solid rgb(52, 47, 59);
+}
+
+.letter-row {
+  display: flex;
+}
+
+/* KEYBOARD */
+
+#virtual-keyboard {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#virtual-keyboard div {
+  display: flex;
+}
+
+.second-row {
+  margin: 0.5rem 0;
+}
+
+.vi-keyboard-button {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.5rem 0.8rem;
+  margin: 0 2px;
+  background-color: rgb(33, 31, 39);
+  color: whitesmoke;
+  border: 1px solid rgb(57, 55, 66);
+  border-radius: 1px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+
+.vi-keyboard-button:hover {
+  transition: 0.2s;
+  border: 1px solid rgba(57, 55, 66, 0.358);
+  background-color: rgba(33, 31, 39, 0.16);
+}
+
+@media (max-width: 510px) {
+  .vi-keyboard-button {
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.2rem 0.35rem;
+  }
+}
+
+/***********************************************************************/
