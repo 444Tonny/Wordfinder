@@ -18,7 +18,7 @@
 
             <ul class="menu__box">
             <li><a class="menu__item" href="#">Home</a></li>
-            <li><a class="menu__item" href="#">Administrators</a></li>
+            <li><a class="menu__item" href="administrator.php">Administrators</a></li>
             <li><a class="menu__item" href="excel.php">Manage Game</a></li>
             <li><a class="menu__item" href="#">Help</a></li>
             <li><a class="menu__item" href="#">Log out</a></li>
@@ -31,7 +31,7 @@
         <span>
             Welcome to the administrator panel !
             <br>
-            Here you can have full access on the word4-9 game !
+            Here you can have full access on the word 4-9 game !
         </span>
     </div>
 

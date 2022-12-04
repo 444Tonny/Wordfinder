@@ -3,19 +3,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/login.css?v1" />
     </head>
 
     <body>
         <form class="box" action="" method="post" name="login">
-            <h1 class="box-logo box-title">WORD 4-9</h1>
-            <h1 class="box-title">Connexion</h1>
-            <input type="text" class="box-input" name="username" placeholder="Nom d'utilisateur">
-            <input type="password" class="box-input" name="password" placeholder="Mot de passe">
-            <input type="submit" value="Connexion " name="submit" class="box-button">
-            <p class="box-register">Vous êtes nouveau ici? <a href="register.php">S'inscrire</a></p>
+            <h1 class="box-logo box-title">WORD <a class="custom-4">4</a>-<a class="custom-9">9</a></h1>
+            <input type="text" class="box-input" name="username" placeholder="Username...">
+            <input type="password" class="box-input" name="password" placeholder="Password...">
+            <input type="submit" class="box-button" value="LOG IN" name="submit" >
             <?php if (! empty($message)) { ?>
-                <p class="errorMessage"><?php echo $message; ?></p>
+                <span class="errorMessage"><?php echo $message; ?></span>
             <?php } ?>
         </form>
     </body>
