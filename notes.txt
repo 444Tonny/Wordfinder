@@ -1,0 +1,12 @@
+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
+git remote add origin  https://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@github.com/tonny444/word4-9.git
+
+git push https://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@github.com/tonny444/word4-9.git 
+git pull https://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@github.com/tonny444/word4-9.git
+
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `username` varchar(100) NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;

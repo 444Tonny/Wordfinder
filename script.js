@@ -150,6 +150,7 @@ function checkGuess () {
     if (guessString === rightGuessString) {
         toastr.success("Congratulations!")
         guessesRemaining = 0
+        winGame();
         return
     } else {
         guessesRemaining -= 1;
@@ -157,6 +158,7 @@ function checkGuess () {
         nextLetter = 0;
 
         if (guessesRemaining === 0) {
+            loseGame();
             toastr.error("Game over!")
             toastr.info(`The right word was: "${rightGuessString}"`)
         }
@@ -235,8 +237,45 @@ document.getElementById("virtual-keyboard").addEventListener("click", (e) => {
     document.dispatchEvent(new KeyboardEvent("keyup", {'key': key}))
 })
 
-initBoard();
+/*************** STATISTICS */
 
+let TOTAL_GAMES = sessionStorage.getItem('games') ?? 0;
+let TOTAL_WINS = sessionStorage.getItem('wins') ?? 0;
+let TOTAL_LOSS = sessionStorage.getItem('loss') ?? 0;
+
+function winGame()
+{
+    let wins = document.getElementById("stats-win");
+    TOTAL_WINS = eval(TOTAL_WINS) + 1;
+    sessionStorage.setItem('wins', TOTAL_WINS);
+    gameFinished();
+}
+
+function loseGame()
+{
+    let loss = document.getElementById("stats-loss");
+    TOTAL_LOSS = eval(TOTAL_LOSS) + 1;
+    sessionStorage.setItem('loss', TOTAL_LOSS);
+    gameFinished();
+}
+
+function gameFinished()
+{
+    document.getElementById("results").style.display = 'block';
+
+    let games = document.getElementById("stats-games");
+    TOTAL_GAMES = eval(TOTAL_GAMES) + 1;
+    sessionStorage.setItem('games', TOTAL_GAMES);
+
+    games.innerHTML = TOTAL_GAMES;
+    wins.innerHTML = TOTAL_WINS;
+    loss.innerHTML = TOTAL_LOSS;
+
+    let percentage = document.getElementById("percentage");
+    percentage.innerHTML = Math.round((TOTAL_WINS * 100) / TOTAL_GAMES);
+}
+
+initBoard();
 
 /*************** GAME SETTINGS */
 

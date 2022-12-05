@@ -1,5 +1,4 @@
-header
-{
+header {
   padding: 8px 5% 20px 5%;
   display: flex;
   flex-direction: row;
@@ -7,14 +6,13 @@ header
   text-align: center;
 }
 
-body
-{
+body {
   background-color: rgb(17, 14, 21);
   color: whitesmoke;
 }
 
 h1 {
- text-align: center;
+  text-align: center;
 }
 
 #game-board {
@@ -92,4 +90,113 @@ h1 {
   }
 }
 
-/***********************************************************************/
+/***** Results Pop Up ***********/
+
+.results {
+  display: none;
+}
+
+.results-back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.425)
+}
+
+.results-stats {
+  width: 330px;
+  height: 250px;
+  padding: 25px 25px 25px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background: rgb(32, 32, 36);
+  border-radius: 6px;
+  transform: translate(-50%, -50%)
+}
+
+.results-stats .head {
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.head .title {
+  margin-left: 10px;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+}
+
+.head .close {
+  font-family: arial;
+  font-weight: 100;
+  color: rgb(99, 99, 99);
+}
+
+.results-stats .blocs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.blocs .bloc {
+  margin: 0px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 70px;
+  height: 70px;
+  background-color: rgb(49, 54, 59);
+  border-radius: 8px;
+  color: rgb(237, 228, 43);
+}
+
+.bloc .value
+{
+  font-family: monospace;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.bloc .label
+{
+  font-family: monospace;
+  color: white;
+}
+
+.play-button
+{
+  margin-top: 50px;
+  height: 46px;
+  width: 50%;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-family: monospace;
+  font-size: 20px;
+  font-weight: 700;
+  color: whitesmoke;
+  background-color: rgb(57, 63, 67);
+  border: none;
+  box-shadow: 3px 3px 1px rgba(49, 49, 49, 0.849);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+
+.play-button:hover
+{
+  transition: 0.2s;
+  background-color: rgb(47, 51, 53);
+}

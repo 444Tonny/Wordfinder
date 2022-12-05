@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wordle</title>
-    <link rel="stylesheet" href="style.css?v3">
+    <link rel="stylesheet" href="style.css?v5">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet"/>
     <link
     rel="stylesheet"
@@ -76,11 +76,56 @@
         </div>
     </div>
 
+    <script>
+        function close() {
+            document.getElementById("results").style.display = 'none';
+            playAgain();
+        }
+        
+        function playAgain() {
+            location.reload();
+        }
+    </script>
+
+    <div id="results" class="results">
+        <div class="results-back"></div>
+        <div class="results-stats">
+            <span class="head">
+                <span class="title">Statistics</span>
+                <span class="close" onclick="close()">Close</span>
+            </span>
+            <div class="blocs">
+                <span class="bloc">
+                    <span id="stats-games" class="value">0</span>
+                    <span class="label">Games</span>
+                </span>
+                <span class="bloc">
+                    <span id="stats-win" class="value">0</span>
+                    <span class="label">Win</span>
+                </span>
+                <span class="bloc">
+                    <span id="stats-loss" class="value">0</span>
+                    <span class="label">Loss</span>
+                </span>
+                <span class="bloc">
+                    <span id="percentage" class="value">0</span>
+                    <span class="label">% Win</span>
+                </span>
+            <div>
+        </div>
+    </div>
+    <script>
+        function playAgain() {
+            location.reload();
+        }
+    </script>
+    <button class="play-button" onclick="playAgain()">Play Again</button>
+
 <script
 src="https://code.jquery.com/jquery-3.6.0.min.js"
 integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
 crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-<script src="script.js?v5" type="module"></script>
+<script src="script.js?v7" type="module"></script>
 </body>
 </html>
