@@ -1,0 +1,103 @@
+header {
+    padding: 0px 5% 0px 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+span.logo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 22px;
+    font-family: monospace;
+}
+
+.dropdowns
+{
+    margin-right: 1%;
+}
+
+.letters
+{
+    font-size: 11px !important;
+    font-family: monospace !important;
+}
+
+.seconds, #selected-letters
+{
+    padding: 8px 12px!important;
+    margin: 1px;
+}
+
+/* Style for dropdown button */
+.dropbtn {
+    background-color: #110e15;
+    color: white;
+    font-family: monospace;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(83, 82, 106);
+  }
+  
+  /* Style for dropdown content */
+  .dropdown-content {
+    padding-top: 18px;
+    padding-bottom: 10px;
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    right: 3%;
+    position: absolute;
+    background-color: #110e15;
+    min-width: 95px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgb(204, 204, 204);
+    z-index: 1;
+  }
+  
+  /* Style for each content div */
+  .dropdown-content .row {
+    padding: 1px 18px;
+    font-size: 13px;
+    font-family: monospace;
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  /* Highlight dropdown options on hover */
+  .dropdown-content .row:hover {
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Highlight dropdown button when dropdown menu is open */
+  .dropdown:hover .dropbtn {
+    background-color: #1d1823;
+  }
+
+  .row div:hover {
+    background-color: #1d1823;
+  }
+
+  label
+  {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-family: monospace;
+  }
+  

@@ -1,7 +1,12 @@
+body
+{
+    padding-bottom: 80px;
+}
+
 .container
 {
     position: relative;
-    top: -10vh;
+    top: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,14 +15,6 @@
     width: 100%;
     height: 100vh;
     text-align: center;
-}
-
-h1
-{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 4.5em;
-    font-weight: 100;
-    margin-bottom: 30px;
 }
 
 .message
@@ -30,4 +27,232 @@ h1
     color: rgb(27, 28, 28);
     font-family: sans-serif;
     font-size: 18px;
+}
+
+/************* SECTIONS ************/
+
+.sections
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-1
+{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    width: 60%;
+    max-width: 500px;
+    min-width: 260px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+
+.section-1 button 
+{
+    width: 38%;
+    height: 48px;
+    margin-bottom: 20px;
+    color: white;
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+}
+
+.wl4 {
+    background-color: rgb(39, 38, 37);
+}
+
+.wl5 {
+    background-color: rgb(41, 161, 89);
+}
+
+.wl6 {
+    background-color: rgb(41, 161, 89);
+}
+
+.wl7 {
+    background-color: rgb(39, 38, 37);
+}
+
+.section-1 button:hover 
+{
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+#ss
+{
+    width: 75% !important;
+    height: 500px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    align-content: center !important;
+    align-self: center;
+}
+
+#ss table
+{
+    width: 100% !important;
+    overflow: hidden !important;
+}
+
+#ssvp_vp
+{
+    width: 1500px !important;
+}
+
+#ss_tabStrip
+{
+    display: none;
+}
+
+.section-2
+{
+    padding-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+
+.section-2 h1
+{
+    border-bottom: 1px solid rgb(199, 201, 201);
+    padding-top: 0px;
+    font-family: sans-serif;
+    font-size: 2.5em;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: rgb(30, 30, 30);
+}
+
+.section-3
+{
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+
+.section-3 h1
+{
+    padding-top: 20px;
+    font-family: sans-serif;
+    font-size: 1.6em;
+    font-weight: 200;
+    margin-bottom: 30px;
+    color: rgb(30, 30, 30);
+}
+
+.section-3 input[type=text]
+{
+    margin-right: 15px;
+    width: 155px;
+    height: 38px;
+    border-radius: 3px;
+    border: 1.5px solid #6b6a6a;
+    padding: auto 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.section-3 input#add-word
+{
+    width: 130px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(41, 161, 89);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+
+.section-3 input#add-word:hover
+{
+    transition: 0.2s;
+    background-color: rgb(33, 128, 71);
+}
+
+.borderbottom
+{
+    padding-bottom: 30px;
+}
+
+.section-4
+{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+
+
+.section-4 button
+{
+    margin: auto 10px;
+    width: 155px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: monospace;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.addMultiple
+{
+    background-color: rgb(39, 38, 37);
+}
+
+.addMultiple:hover
+{
+    background-color: rgb(24, 24, 24);
+}
+
+.section-4 button#update
+{
+    background-color: rgb(210, 179, 69);
+}
+
+.section-4 button#delete
+{
+    background-color: rgb(201, 55, 55);
+}
+
+.section-4 button#update:hover
+{
+    background-color: rgb(163, 142, 65);
+}
+
+.section-4 button#delete:hover
+{
+    background-color: rgb(176, 54, 54);
 }

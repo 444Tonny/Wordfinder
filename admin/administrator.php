@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/administrator.css?v1">
+    <link rel="stylesheet" href="css/administrator.css?v2">
+    <link rel="stylesheet" href="css/help.css?v2">
     <title>Administrator</title>
 </head>
 <body>
@@ -15,18 +16,32 @@
         <div class="hamburger-menu">
             <input id="menu__toggle" type="checkbox" />
             <label class="menu__btn" for="menu__toggle">
-            <span></span>
+                <span></span>
             </label>
 
             <ul class="menu__box">
-            <li><a class="menu__item" href="#">Home</a></li>
-            <li><a class="menu__item" href="administrator.php">Administrators</a></li>
-            <li><a class="menu__item" href="excel.php">Manage Game</a></li>
-            <li><a class="menu__item" href="#">Help</a></li>
-            <li><a class="menu__item" href="#">Log out</a></li>
+                <li><a class="menu__item" href="home.php">Home</a></li>
+                <li><a class="menu__item" href="administrator.php">Administrators</a></li>
+                <li><a class="menu__item" href="excel.php">Words</a></li>
+                <li><a class="menu__item" href="#">Log out</a></li>
             </ul>
         </div>
     </header>
+
+    <button class="help" id="help">?</button>
+    <div id="manual" class=manual style="display:none;">
+        <div class="manual-back"></div>
+        <div class="manual-content">
+            <h2>HELP</h2>
+            <span> <a class="num">1</a> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, nulla dolor in rem autem</span>
+            <span> <a class="num">2</a> Alias itaque sapiente omnis aliquid! Placeat suscipit molestiae, nobis officia quas debitis ut distinctio hic iste!</span>
+            <span> <a class="num">3</a> Alias itaque sapiente omnis aliquid! Placeat suscipit molestiae, nobis officia </span>
+            <span> <a class="num">4</a> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, nulla dolor in rem autem</span>
+            <span> <a class="num">5</a> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, nulla dolor in rem autem</span>
+            <span> <a class="num">6</a> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, nulla dolor in rem autem</span>
+            <button id="manual-close">Understand</button>
+        </div>
+    </div>
 
     <div class="container">
         
@@ -104,5 +119,6 @@
     </div>
     
     <script src="js/popup.js"></script>
+    <script src="js/help.js?v1"></script>
 </body>
 </html>

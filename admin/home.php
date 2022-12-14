@@ -13,15 +13,14 @@
         <div class="hamburger-menu">
             <input id="menu__toggle" type="checkbox" />
             <label class="menu__btn" for="menu__toggle">
-            <span></span>
+                <span></span>
             </label>
 
             <ul class="menu__box">
-            <li><a class="menu__item" href="#">Home</a></li>
-            <li><a class="menu__item" href="administrator.php">Administrators</a></li>
-            <li><a class="menu__item" href="excel.php">Manage Game</a></li>
-            <li><a class="menu__item" href="#">Help</a></li>
-            <li><a class="menu__item" href="#">Log out</a></li>
+                <li><a class="menu__item" href="home.php">Home</a></li>
+                <li><a class="menu__item" href="administrator.php">Administrators</a></li>
+                <li><a class="menu__item" href="excel.php">Words</a></li>
+                <li><a class="menu__item" href="#">Log out</a></li>
             </ul>
         </div>
     </header>
