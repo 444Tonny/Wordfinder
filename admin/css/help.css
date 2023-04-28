@@ -1,34 +1,31 @@
-.help
-{
-  width: 50px;
-  height: 50px;
-  position: fixed;
-  right: 25px;
-  top: 25px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 25px;
-  font-weight: bold;
-  font-family: monospace;
-  font-family: monospace;
-  color: #333;
-  background-color: whitesmoke;
-  box-shadow: 1px 1px 7px 0px rgb(182, 185, 187);
-  border: none;
-  cursor: pointer;
-  z-index: 9;
+.help {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 25px;
+    top: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: monospace;
+    font-family: monospace;
+    color: #333;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 7px 0px rgb(182, 185, 187);
+    border: none;
+    cursor: pointer;
+    z-index: 9;
 }
 
-.help:hover
-{
-  transition: 0.2s;
-  box-shadow: 1px 1px 7px 0px rgb(154, 159, 162);
+.help:hover {
+    transition: 0.2s;
+    box-shadow: 1px 1px 7px 0px rgb(154, 159, 162);
 }
 
-.manual
-{
+.manual {
     width: 100%;
     height: 100vh;
 }
@@ -41,11 +38,10 @@
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.425);
-    z-index:7;
-  }
+    z-index: 7;
+}
 
-.manual-content
-{
+.manual-content {
     width: 55%;
     min-width: 350px;
     max-width: 475px;
@@ -53,7 +49,7 @@
     padding: 40px 40px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: left;
     border: solid 2px red;
     background-color: white;
     position: fixed;
@@ -66,37 +62,38 @@
     box-shadow: 0px 1px 10px 1px #6e6e6e;
 }
 
-.manual h2 
-{
+.manual h2 {
     margin-bottom: 10px;
     margin-top: 1px;
     text-align: center;
-    font-size: 2.3em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.2em;
+    font-family: arial, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #1a1a1b;
     font-weight: 100;
 }
 
-.manual span .num
-{
+.manual span .num {
     border: 1px solid black;
-    color: black;
+    color: rgb(53, 53, 53);
     border-radius: 50%;
     padding: 1px 7px;
     font-size: 15px;
     margin-right: 4px;
 }
 
-.manual span 
-{
+.manual span {
     margin-bottom: 9px;
     font-size: 14px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #1a1a1b;
 }
 
-.manual button 
-{
+.manual button {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
     width: 40%;
     min-width: 190px;
     margin-top: 25px;
@@ -113,7 +110,15 @@
 }
 
 
-.manual button:hover
-{
+.manual button:hover {
     background-color: #080808;
+}
+
+.nb
+{
+    text-align: center;
+    margin-top: 10px !important;
+    margin-bottom: 0px !important;
+    font-size: 13px !important;
+    color: #e0461c !important;
 }

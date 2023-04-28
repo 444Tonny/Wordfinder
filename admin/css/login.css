@@ -17,9 +17,9 @@ body {
     padding: 30px 25px 10px 25px;
     background: rgb(254, 254, 254);
     margin: 30px auto;
-    width: 30%;
-    max-width: 440px;
-    min-width: 200px;
+    width: 50%;
+    max-width: 400px;
+    min-width: 270px;
     height: 400px;
 }
 

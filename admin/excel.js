@@ -9,6 +9,7 @@ $(document).ready(function () {
     excelIO = new GC.Spread.Excel.IO();
 });
 
+
 function changeTitle(wordslengthvalue)
 {
     document.getElementById("title-length").innerText = wordslengthvalue;
@@ -112,16 +113,14 @@ document.getElementById("delete").onclick = function() {
     var sheet = workbook.getActiveSheet();
     var count = sheet.getRowCount();
 
-    alert(count);
-
     for(var i = 1 ; i < count ; i++)
     {
         sheet.deleteRows(1, i);
-        alert(i);
     }
     
     sheet.deleteRows(1, 0);
     sheet.deleteRows(0, 0);
+    sheet.deleteRows(0, 1);
 
     workbook.suspendPaint();
     workbook.suspendCalcService();
@@ -185,3 +184,4 @@ function ExportFile(custom_success_message, custom_error_message) {
         }
     });
 }
+

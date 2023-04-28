@@ -21,9 +21,10 @@
 
             <ul class="menu__box">
                 <li><a class="menu__item" href="home.php">Home</a></li>
+                <li><a class="menu__item" href="CMS.php">CMS</a></li>
                 <li><a class="menu__item" href="administrator.php">Administrators</a></li>
                 <li><a class="menu__item" href="excel.php">Words</a></li>
-                <li><a class="menu__item" href="#">Log out</a></li>
+                <li><a class="menu__item" href="controller/logoutController.php">Log out</a></li>
             </ul>
         </div>
     </header>
@@ -33,12 +34,13 @@
         <div class="manual-back"></div>
         <div class="manual-content">
             <h2>HELP</h2>
-            <span> <a class="num">1</a> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, nulla dolor in rem autem</span>
-            <span> <a class="num">2</a> Alias itaque sapiente omnis aliquid! Placeat suscipit molestiae, nobis officia quas debitis ut distinctio hic iste!</span>
-            <span> <a class="num">3</a> Alias itaque sapiente omnis aliquid! Placeat suscipit molestiae, nobis officia </span>
-            <span> <a class="num">4</a> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, nulla dolor in rem autem</span>
-            <span> <a class="num">5</a> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, nulla dolor in rem autem</span>
-            <span> <a class="num">6</a> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, nulla dolor in rem autem</span>
+            <span>- All registered administrators are listed in the table.</span>
+            <span>- You can remove an administrator. (Be carefull this action is irreversible).</span> 
+            <span>- You can register a new administrator on the form below.</span>
+            <span>- Changing password require the administrator's old password</span>
+            <span class="nb"> 
+                <i>You cannot delete all administrators !</i> 
+            </span>
             <button id="manual-close">Understand</button>
         </div>
     </div>

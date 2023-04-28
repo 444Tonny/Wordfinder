@@ -23,7 +23,7 @@
         src="../node_modules/@grapecity/spread-sheets/dist/gc.spread.sheets.all.min.js"></script>
     <script type="text/javascript"
         src="../node_modules/@grapecity/spread-excelio/dist/gc.spread.excelio.min.js"></script>
-    <title>Document</title>
+    <title>Editor</title>
 
     <meta name="google-signin-client_id"
         content="337137810338-srvid0gaqrfslv773m2d37fr25cmetnh.apps.googleusercontent.com">
@@ -40,7 +40,7 @@
 
             <ul class="menu__box">
                 <li><a class="menu__item" href="home.php">Home</a></li>
-                <li><a class="menu__item" href="CMS.php">CMS</a></li>
+                <li><a class="menu__item" href="editor.php">Editor</a></li>
                 <li><a class="menu__item" href="administrator.php">Administrators</a></li>
                 <li><a class="menu__item" href="excel.php">Words</a></li>
                 <li><a class="menu__item" href="controller/logoutController.php">Log out</a></li>
@@ -55,7 +55,6 @@
             <h2>HELP</h2>
             <span> <a class="num">1</a> Choose the category of words you want to edit.</span>
             <span> <a class="num">2</a> Write only on the first column (A).</span>
-            <span> <a class="num">3</a> Make sure to save after every modification.</span>
 
             <button id="manual-close">Understand</button>
         </div>
@@ -63,12 +62,11 @@
 
     <script>
         
-        var spreadsheetId = "1XRc4j6z7Bx3bnmdg8e_kTwBBB54OU7rLFX5pZrDfGxI";
-        var spreadsheetUrl = "https://docs.google.com/spreadsheets/d/" + spreadsheetId+ "#gid=";
+        var link = "1XRc4j6z7Bx3bnmdg8e_kTwBBB54OU7rLFX5pZrDfGxI";
 
-        function open_googlespreadsheet(sheetId) {
+        function open_editor() {
             
-            window.open(spreadsheetUrl + sheetId, '_blank');
+            window.open(link);
             /*
             var openSpreadsheetBtn = document.getElementById("openSpreadsheetBtn");
             openSpreadsheetBtn.onclick = function() {
@@ -84,10 +82,7 @@
 
     <div class="sections">
         <div class="section-1">
-            <button class="words-length wl4" onclick="open_googlespreadsheet(0)">4 LETTERS</button>
-            <button class="words-length wl5" onclick="open_googlespreadsheet(742746795)">5 LETTERS</button>
-            <button class="words-length wl6" onclick="open_googlespreadsheet(1941787065)">6 LETTERS</button>
-            <button class="words-length wl7" onclick="open_googlespreadsheet(2026133994)">7 LETTERS</button>
+            <button class="words-length wl4" onclick="open_editor()">HTML EDITOR</button>
         </div>
     </div>
 

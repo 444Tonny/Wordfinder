@@ -17,13 +17,10 @@
         if (isset($fileName)) {
 
             if(file_exists($uploadPath)) {
-                var_dump(" copie suppression");
                 $file = fopen($uploadPath, "r");
                 fclose($file);
                 chmod($uploadPath,465); //Change the file permissions if allowed
                 unlink($uploadPath); //remove the file
-
-                echo ($fileName . " copie suppression");
             }
 
             $didUpload = move_uploaded_file($fileTmpName, $uploadPath);
